@@ -125,7 +125,7 @@ export default function MainInterface() {
           <h2 className="text-3xl font-bold text-center mb-6">🎓 Mon parcours académique</h2>
           <ul className="text-center space-y-4">
             <li><strong><a href="https://www.ulaval.ca/etudes/programmes/baccalaureat-en-genie-logiciel">Baccalauréat en génie logiciel</a></strong> - <a href="https://www.ulaval.ca/">Université Laval</a> (2023 - Actuellement)</li>
-            <li><strong><a href="https://www.csfoy.ca/programmes/tous-les-programmes/programmes-preuniversitaires/sciences-de-la-nature-profil-sciences-et-sante">Sciences de la nature</a></strong> - <a href="https://www.csfoy.ca/">Cégep de Sainte-Foy</a> (2021 - 2023)</li>
+            <li><strong><a href="https://www.csfoy.ca/programmes/tous-les-programmes/programmes-preuniversitaires/sciences-de-la-nature-profil-universel">Sciences de la nature</a></strong> - <a href="https://www.csfoy.ca/">Cégep de Sainte-Foy</a> (2021 - 2023)</li>
             <li><strong><a href="https://www.derochebelle.qc.ca/programmes/programme-deducation-internationale-pei/">Programme d’éducation internationale</a></strong> - <a href="https://www.derochebelle.qc.ca/">École secondaire De Rochebelle</a> (2016 - 2021)</li>
           </ul>
 

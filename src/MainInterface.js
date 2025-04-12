@@ -124,23 +124,23 @@ export default function MainInterface() {
         <section id="parcours" className="mb-24 scroll-mt-24">
           <h2 className="text-3xl font-bold text-center mb-6">🎓 Mon parcours académique</h2>
           <ul className="text-center space-y-4">
-            <li><strong>Baccalauréat en génie logiciel</strong> - Université Laval (2023 - Actuellement)</li>
-            <li><strong>Sciences de la nature</strong> - Cégep de Sainte-Foy (2021 - 2023)</li>
-            <li><strong>Programme d’éducation internationale</strong> - De Rochebelle (2016 - 2021)</li>
+            <li><strong><a href="https://www.ulaval.ca/etudes/programmes/baccalaureat-en-genie-logiciel">Baccalauréat en génie logiciel</a></strong> - <a href="https://www.ulaval.ca/">Université Laval</a> (2023 - Actuellement)</li>
+            <li><strong><a href="https://www.csfoy.ca/programmes/tous-les-programmes/programmes-preuniversitaires/sciences-de-la-nature-profil-sciences-et-sante">Sciences de la nature</a></strong> - <a href="https://www.csfoy.ca/">Cégep de Sainte-Foy</a> (2021 - 2023)</li>
+            <li><strong><a href="https://www.derochebelle.qc.ca/programmes/programme-deducation-internationale-pei/">Programme d’éducation internationale</a></strong> - <a href="https://www.derochebelle.qc.ca/">École secondaire De Rochebelle</a> (2016 - 2021)</li>
           </ul>
 
           <h2 className="text-3xl font-bold text-center mt-12 mb-6">💼 Mon parcours professionnel</h2>
           <ul className="text-center space-y-4">
-            <li><strong>Technicien en réseau informatique</strong> – Ministère de la Famille (Sept. 2024 – Actuellement)</li>
-            <li><strong>Conseiller gouvernement ouvert</strong> – Ministère de la Cybersécurité et du Numérique (Mai – Sept. 2024)</li>
-            <li><strong>Employé occasionnel</strong> – Ville de Québec, parcs & installations (Nov. 2023 – Avril 2024)</li>
-            <li><strong>Animateur de groupes</strong> – PEPS, Université Laval (Sept. – Déc. 2023)</li>
-            <li><strong>Tuteur scolaire</strong> – Cégep de Sainte-Foy (Sept. 2021 – Déc. 2023)</li>
-            <li><strong>Coordonnateur de projets</strong> – Coopérative jeunesse de Pont-Rouge (Mai – Sept. 2022)</li>
-            <li><strong>Entraîneur adjoint élite</strong> – CS TRIDENT (Fév. 2024 – Actuellement)</li>
-            <li><strong>Entraîneur-animateur jeunes U4-U12</strong> – Caravelles de Ste-Foy / CS TRIDENT (Juin 2018 – Actuellement)</li>
-            <li><strong>Entraîneur futsal juvénile</strong> – École secondaire De Rochebelle (Oct. 2023 – Actuellement)</li>
-            <li><strong>Entraîneur soccer juvénile</strong> – École secondaire De Rochebelle (Sept. 2021 – Actuellement)</li>
+            <li><strong>Technicien en réseau informatique</strong> – <a href="https://www.quebec.ca/gouvernement/ministere/famille">Ministère de la Famille</a> (Sept. 2024 – Actuellement)</li>
+            <li><strong>Conseiller gouvernement ouvert</strong> – <a href="https://www.quebec.ca/gouvernement/ministeres-organismes/cybersecurite-numerique">Ministère de la Cybersécurité et du Numérique</a> (Mai – Sept. 2024)</li>
+            <li><strong>Employé occasionnel</strong> – <a href="https://www.ville.quebec.qc.ca/citoyens/loisirs_sports/installations_sportives/index.aspx">Ville de Québec, parcs & installations</a> (Nov. 2023 – Avril 2024)</li>
+            <li><strong>Animateur de groupes</strong> – <a href="https://peps.ulaval.ca/">PEPS, Université Laval</a> (Sept. – Déc. 2023)</li>
+            <li><strong>Tuteur scolaire</strong> – <a href="https://www.csfoy.ca/">Cégep de Sainte-Foy</a> (Sept. 2021 – Déc. 2023)</li>
+            <li><strong>Coordonnateur de projets</strong> – <a href="https://cqcm.coop/initiatives/ciec">Coopérative jeunesse de Pont-Rouge</a> (Mai – Sept. 2022)</li>
+            <li><strong>Entraîneur adjoint élite</strong> – <a href="https://www.cstrident.ca/">CS TRIDENT</a> (Fév. 2024 – Actuellement)</li>
+            <li><strong>Entraîneur-animateur jeunes U4-U12</strong> – <a href="https://www.linkedin.com/company/club-de-soccer-caravelles-de-sainte-foy-sillery-ccs-/?originalSubdomain=ca">Caravelles de Ste-Foy</a> / <a href="https://www.cstrident.ca/">CS TRIDENT</a> (Juin 2018 – Actuellement)</li>
+            <li><strong>Entraîneur futsal juvénile</strong> – <a href="https://www.derochebelle.qc.ca/">École secondaire De Rochebelle</a> (Oct. 2023 – Actuellement)</li>
+            <li><strong>Entraîneur soccer juvénile</strong> – <a href="https://www.derochebelle.qc.ca/">École secondaire De Rochebelle</a> (Sept. 2021 – Actuellement)</li>
           </ul>
 
         </section>

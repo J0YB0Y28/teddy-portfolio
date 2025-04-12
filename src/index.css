@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +16,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body.dark {
+  background-color: #0f0f1a; 
+  color: #a3e635;
+}
+body.light {
+  background-color: #fff;
+  color: #222;
+}
+body.hacker {
+  background-color: #000; 
+  color: #0f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

@@ -105,8 +105,8 @@ export default function TerminalIntro() {
     setTheme(savedTheme);
 
     // applique la classe body.* 
-    document.body.classList.remove("light", "dark", "hacker");
-    document.body.classList.add(savedTheme);
+    document.documentElement.classList.remove("light", "dark", "hacker");
+    document.documentElement.classList.add(savedTheme);
 
     const savedLang = localStorage.getItem("lang");
     if (savedLang === "en" || savedLang === "fr") {
@@ -358,6 +358,19 @@ export default function TerminalIntro() {
             ☀️
           </motion.span>
         </motion.h1>
+        
+        {/* Message d'information visuel */}
+        <div
+          className="mb-6 px-4 py-2 rounded-lg text-center text-sm font-medium"
+          style={{
+            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            color: "#facc15",
+            maxWidth: "700px"
+          }}
+        >
+          Cliquez ou bougez le curseur n'importe où sur la page pour interagir avec l’arrière-plan animé ✨
+        </div>
+
 
         {/* Terminal box */}
         <motion.div

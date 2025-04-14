@@ -1,10 +1,10 @@
 // MainInterface.js amélioré
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  FaGithub, FaLinkedin, FaArrowUp,
-  FaPython, FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaJsSquare,
-  FaMoon, FaSun, FaEnvelope, FaFilePdf
+  FaGithub, FaLinkedin, FaArrowUp, FaDatabase, FaLaptop, FaLinux, FaUbuntu,
+  FaPython, FaFlask, FaHtml5, FaCss3Alt, FaReact, FaGitAlt, FaJsSquare, FaUserShield,
+  FaMoon, FaSun, FaEnvelope, FaFilePdf, FaRobot, FaServer, FaWindows, FaWordpress    
 } from "react-icons/fa";
 import {
   SiCplusplus, SiTailwindcss, SiMysql, SiOpencv
@@ -50,7 +50,16 @@ const projects = [
 ];
 
 const skills = [
+  { name: "Matériel Informatique", icon: <FaLaptop /> },
+  { name: "WIndows", icon: <FaWindows /> },
+  { name: "Linux", icon: <FaLinux /> },
+  { name: "Ubuntu", icon: <FaUbuntu /> }, 
+  { name: "Serveur Web et API", icon: <FaServer /> },
+  { name: "Cybersécurité", icon: <FaUserShield /> },
+  { name: "IA", icon: <FaRobot  /> },
+  { name: "Wordpress", icon: <FaWordpress /> },
   { name: "Python", icon: <FaPython /> },
+  { name: "Flask", icon: <FaFlask /> },
   { name: "C++", icon: <SiCplusplus /> },
   { name: "HTML", icon: <FaHtml5 /> },
   { name: "CSS", icon: <FaCss3Alt /> },
@@ -58,7 +67,8 @@ const skills = [
   { name: "React", icon: <FaReact /> },
   { name: "TailwindCSS", icon: <SiTailwindcss /> },
   { name: "Git", icon: <FaGitAlt /> },
-  { name: "SQL", icon: <SiMysql /> },
+  { name: "Base de données", icon: <FaDatabase /> },
+  { name: "MySQL", icon: <SiMysql /> },
   { name: "OpenCV", icon: <SiOpencv /> }
 ];
 
@@ -70,6 +80,17 @@ export default function MainInterface() {
     localStorage.getItem("theme") === "dark"
   );
 
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+      setIsDark(true);
+    } else {
+      document.body.classList.remove("dark");
+      setIsDark(false);
+    }
+  }, []);
+
 
   return (
     <div className="transition-colors duration-500 ease-in-out text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-black min-h-screen scroll-smooth">
@@ -78,16 +99,17 @@ export default function MainInterface() {
         <a href="#parcours">Parcours</a>
         <a href="#apropos">À propos</a>
         <a href="#projects">Projets</a>
-        <a href="#skills">Compétences</a>
         <a href="#demo">Démo</a>
+        <a href="#skills">Compétences</a>
         <a href="#contact">Contact</a>
         <button
           onClick={() => {
-            const root = window.document.documentElement;
-            const newTheme = isDark ? "light" : "dark";
+            const root = document.body;
+            const currentlyDark = root.classList.contains("dark");
+            const newTheme = currentlyDark ? "light" : "dark";
             root.classList.toggle("dark");
             localStorage.setItem("theme", newTheme);
-            setIsDark(!isDark);
+            setIsDark(!currentlyDark);
           }}
           className="ml-4 p-2 rounded-full bg-gray-200 dark:bg-zinc-700 transition duration-300 hover:scale-110"
         >
@@ -290,6 +312,13 @@ export default function MainInterface() {
           <FaArrowUp />
         </button>
       </main>
+      {/* Bouton retour vers le terminal */}
+      <a
+        href="/"
+        className="fixed bottom-6 left-6 bg-purple-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-purple-700 transition-transform duration-300 hover:scale-105"
+      >
+        ⬅️ Terminal
+      </a>
     </div>
   );
 }
